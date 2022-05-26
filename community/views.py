@@ -23,7 +23,7 @@ def article_list_or_create(request):
         return Response(serializer.data, status=status.HTTP_200_OK)
 
     def create_article():
-        request.user.casino_points += 1000
+        request.user.casino_points += 3000
         serializer = UserChangeSerializerForPoint(instance=request.user, data=request.data)
         if serializer.is_valid(raise_exception=True):
             serializer.save()
