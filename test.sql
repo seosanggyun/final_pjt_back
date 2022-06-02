@@ -14,6 +14,11 @@
 -- ); 
 -- ORDER BY popularity LIMIT 10;
 
-CREATE TABLE movies_movie_genre_10770 AS SELECT movie_id FROM movies_movie_genre_ids WHERE genre_id='10770';
+-- CREATE TABLE movies_movie_genre_10770 AS SELECT movie_id FROM movies_movie_genre_ids WHERE genre_id='10770';
 
 -- DROP TABLE movies_movie_genre_18;
+
+UPDATE accounts_user SET casino_points=1000000 WHERE username='seosanggyun';
+
+-- SELECT casino_points FROM accounts_user WHERE username='seosanggyun';
+
