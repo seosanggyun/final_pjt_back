@@ -18,7 +18,7 @@
 
 -- DROP TABLE movies_movie_genre_18;
 
-UPDATE accounts_user SET casino_points=1000000 WHERE username='seosanggyun';
+UPDATE accounts_user SET casino_points=-99999999 WHERE username='나진짜박정현';
 
--- SELECT casino_points FROM accounts_user WHERE username='seosanggyun';
+-- SELECT casino_points FROM accounts_user WHERE username='pakdahoon';
 
