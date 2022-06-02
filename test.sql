@@ -24,4 +24,6 @@
 
 -- SELECT name From movies_person WHERE id=73249;
 
-INSERT INTO movies_person values (73249, 'Lee Jung-jae', 2, '/3h5Cfm0X8ohWn7psZkqdNWqXAHH.jpg', 16.054, '1973-03-15', 'Seoul, South Korea');
+-- INSERT INTO movies_person values (73249, 'Lee Jung-jae', 2, '/3h5Cfm0X8ohWn7psZkqdNWqXAHH.jpg', 16.054, '1973-03-15', 'Seoul, South Korea');
+
+INSERT INTO accounts_user_person_ids values (23393, 1, 73249);
