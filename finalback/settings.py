@@ -167,7 +167,7 @@ REST_FRAMEWORK = {
 # 특정 origin 에게만 교차 출처 허용
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:8080",
-    "https://masino.netlify.app/"
+    "https://masino.netlify.app"
 ]
 
 # 모두에게 교차출처 허용
