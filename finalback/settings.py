@@ -26,6 +26,7 @@ SECRET_KEY = 'django-insecure-=d%9u+r7(k9fuk*lcj=mvx$)&2f_me63dax%ahf9es(%!x70l^
 DEBUG = True
 
 ALLOWED_HOSTS = [
+    'masino-back.herokuapp.com',
     '54.167.14.51',
     'ssafymasino.tk',
     'masino.link',
