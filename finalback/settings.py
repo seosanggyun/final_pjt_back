@@ -25,10 +25,10 @@ SECRET_KEY = 'django-insecure-=d%9u+r7(k9fuk*lcj=mvx$)&2f_me63dax%ahf9es(%!x70l^
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = [
-    '54.167.14.51',
-    'ssafymasino.tk',
-    'masino.link',
+ALLOWED_HOSTS = [ '*',
+    # '54.167.14.51',
+    # 'ssafymasino.tk',
+    # 'masino.link',
 ]
 
 
@@ -66,6 +66,9 @@ INSTALLED_APPS = [
 MIDDLEWARE = [
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
+
+    'whitenoise.middleware.WhiteNoiseMiddleware',
+    
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -172,3 +175,9 @@ CORS_ALLOWED_ORIGINS = [
 
 # 모두에게 교차출처 허용
 # CORS_ALLOW_ALL_ORIGINS = True
+
+
+# Heroku: Update database configuration from $DATABASE_URL.
+import dj_database_url
+db_from_env = dj_database_url.config(conn_max_age=500)
+DATABASES['default'].update(db_from_env)
